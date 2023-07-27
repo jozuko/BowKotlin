@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:autoSizeMaxTextSize="16dp"
+    android:autoSizeMinTextSize="1dp"
+    android:autoSizeTextType="uniform"
+    android:gravity="center"
+    android:lines="1"
+    android:textSize="16dp"
+    android:textStyle="bold"
+    android:text="@string/read_more" />
+

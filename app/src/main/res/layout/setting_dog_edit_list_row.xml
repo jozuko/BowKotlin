@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/dog_list_row_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/dog_list_row_color"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/dog_list_row_image"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/dog_list_row_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toLeftOf="@id/dog_list_row_visibility_off"
+        android:layout_toRightOf="@id/dog_list_row_color"
+        android:textColor="@color/dog_button_enabled"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/dog_list_row_edit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_edit" />
+
+    <ImageView
+        android:id="@+id/dog_list_row_visibility_off"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_toLeftOf="@id/dog_list_row_edit"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_visibility_off" />
+</RelativeLayout>

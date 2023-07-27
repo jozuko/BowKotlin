@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="60dp"
+    tools:ignore="RtlSymmetry">
+
+    <ImageView
+        android:id="@+id/dog_list_row_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:src="@mipmap/ic_medicine_1" />
+
+    <TextView
+        android:id="@+id/viewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_toLeftOf="@id/viewTime"
+        android:layout_toRightOf="@id/dog_list_row_image"
+        android:textColor="@color/calendar_text"
+        android:textSize="14dp"
+        tools:text="薬" />
+
+    <TextView
+        android:id="@+id/viewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/calendar_text"
+        android:textSize="14dp"
+        tools:text="10:02" />
+</RelativeLayout>
+

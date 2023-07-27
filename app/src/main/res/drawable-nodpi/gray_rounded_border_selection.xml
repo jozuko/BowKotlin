@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@color/dog_button_disabled" android:dashWidth="4dp" android:dashGap="2dp" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@color/dog_button_enabled" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FEFEFE</color>
+    <color name="black">#010101</color>
+    <color name="black_87">#222222</color>
+    <color name="black_80">#333333</color>
+    <color name="black_30">#B3B3B3</color>
+    <color name="black_alpha_80">#33010101</color>
+    <color name="black_alpha_70">#4D010101</color>
+
+    <color name="green">#90BF2A</color>
+    <color name="yellow">#F2E74B</color>
+    <color name="blond">#FFA60C</color>
+    <color name="red">#F23A29</color>
+    <color name="red_50">#F2A59E</color>
+    <color name="dark_red">#730202</color>
+    <color name="green_alpha_80">#3390BF2A</color>
+
+    <color name="button_enabled_background">@color/red</color>
+    <color name="button_disabled_background">@color/red_50</color>
+    <color name="button_foreground">@color/white</color>
+    <color name="button_ripple_white">@color/white</color>
+    <color name="button_ripple_black">@color/black_80</color>
+
+    <color name="calendar_text">@color/black_80</color>
+    <color name="calendar_border">@color/black_30</color>
+    <color name="calendar_cell_weekday">#FFF</color>
+    <color name="calendar_cell_saturday">#f4f4fe</color>
+    <color name="calendar_cell_sunday">#fef4f4</color>
+
+    <color name="dog_purple">#920783</color>
+    <color name="dog_indigo">#1D2088</color>
+    <color name="dog_blue">#0068B7</color>
+    <color name="dog_green">#009944</color>
+    <color name="dog_yellow">#FFF100</color>
+    <color name="dog_orange">#F39800</color>
+    <color name="dog_red">#E60012</color>
+
+    <color name="dog_button_enabled">#333</color>
+    <color name="dog_button_disabled">#888</color>
+</resources>

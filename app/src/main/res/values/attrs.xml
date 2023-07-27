@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DogColorSelectionView">
+        <attr name="color_type">
+            <enum name="purple" value="0" />
+            <enum name="indigo" value="1" />
+            <enum name="blue" value="2" />
+            <enum name="green" value="3" />
+            <enum name="yellow" value="4" />
+            <enum name="orange" value="5" />
+            <enum name="red" value="6" />
+        </attr>
+    </declare-styleable>
+
+</resources>

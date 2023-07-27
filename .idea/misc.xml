@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/calendar_dog_selection_dog_row.xml" value="0.20208333333333334" />
+        <entry key="app/src/main/res/layout/calendar_event_dog_row.xml" value="0.20208333333333334" />
+        <entry key="app/src/main/res/layout/calendar_event_event_row.xml" value="0.20208333333333334" />
+        <entry key="app/src/main/res/layout/calendar_fragment.xml" value="0.20208333333333334" />
+        <entry key="app/src/main/res/layout/calendar_page.xml" value="0.22327898550724637" />
+        <entry key="app/src/main/res/layout/dog_event_list_dog_row.xml" value="0.20208333333333334" />
+        <entry key="app/src/main/res/layout/dog_event_list_fragment.xml" value="0.20208333333333334" />
+        <entry key="app/src/main/res/layout/dog_event_list_month_row.xml" value="0.20208333333333334" />
+        <entry key="app/src/main/res/layout/dog_event_list_row_event.xml" value="0.20208333333333334" />
+        <entry key="app/src/main/res/layout/dog_event_list_row_month.xml" value="0.22327898550724637" />
+        <entry key="app/src/main/res/layout/dog_event_list_row_read_more.xml" value="0.35104166666666664" />
+        <entry key="app/src/main/res/layout/main_activity.xml" value="0.20208333333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="org.greenrobot.eventbus.Subscribe" />
+    </list>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

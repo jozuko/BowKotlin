@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7FAAAAAA"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="false"
+    android:padding="48dp"
+    tools:ignore="HardcodedText">
+
+    <RelativeLayout
+        android:id="@+id/dog_selection_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/white_shadow"
+        android:padding="@dimen/view_margin">
+
+        <TextView
+            android:id="@+id/dog_selection_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginHorizontal="8dp"
+            android:layout_toLeftOf="@id/dog_selection_close"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/dog_button_enabled"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dog_selection_close"
+            style="@style/BowFlatButtonStyle.Base"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_close"
+            android:drawableTint="@color/calendar_text"
+            android:theme="@style/BowBlackRippleButtonTheme" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dog_selection_task"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dog_selection_delete"
+                style="@style/BowFlatButtonStyle.Base"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@mipmap/ic_delete"
+                android:drawablePadding="-24dp"
+                android:text="削除"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:theme="@style/BowWhiteRippleButtonTheme" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:text="日時"
+                android:textColor="@color/black_80"
+                android:textSize="16dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dog_selection_event_timestamp"
+                style="@style/BowFlatButtonStyle.Base"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/blond"
+                android:textSize="20dp"
+                android:theme="@style/BowWhiteRippleButtonTheme"
+                tools:text="2021/5/10 11:30" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:text="犬"
+                android:textColor="@color/black_80"
+                android:textSize="16dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dog_selection_all_dog"
+                style="@style/BowFlatButtonStyle.Base"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/blond"
+                android:text="全員"
+                android:textSize="20dp"
+                android:theme="@style/BowWhiteRippleButtonTheme" />
+
+            <TextView
+                android:id="@+id/dog_selection_or_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="or"
+                android:textColor="@color/black_80"
+                android:textSize="16dp" />
+
+            <ListView
+                android:id="@+id/dog_selection_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:divider="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7FAAAAAA"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="false"
+    android:padding="48dp"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:id="@+id/dog_edit_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/white_shadow"
+        android:orientation="vertical"
+        android:padding="@dimen/view_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dog_edit_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="4dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/dog_photo_rotate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/white"
+                android:src="@mipmap/ic_rotate_90"
+                app:borderWidth="0dp"
+                app:fabCustomSize="24dp"
+                app:rippleColor="@color/white"
+                app:tint="#888" />
+
+            <EditText
+                android:id="@+id/dog_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/dog_edit_photo"
+                android:hint="名前"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/dog_edit_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dog_edit_name"
+                android:layout_toRightOf="@id/dog_edit_photo"
+                android:hint="誕生日" />
+
+            <RadioGroup
+                android:id="@+id/dog_edit_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dog_edit_birthday"
+                android:layout_toRightOf="@id/dog_edit_photo"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/dog_edit_gender_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="オス" />
+
+                <RadioButton
+                    android:id="@+id/dog_edit_gender_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="メス" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/dog_edit_color_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dog_edit_gender"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <com.studio.jozu.bow.presentation.main.settings.dog.DogColorSelectionView
+                    android:id="@+id/dog_edit_color_purple"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:color_type="purple" />
+
+                <com.studio.jozu.bow.presentation.main.settings.dog.DogColorSelectionView
+                    android:id="@+id/dog_edit_color_indigo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:color_type="indigo" />
+
+                <com.studio.jozu.bow.presentation.main.settings.dog.DogColorSelectionView
+                    android:id="@+id/dog_edit_color_blue"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:color_type="blue" />
+
+                <com.studio.jozu.bow.presentation.main.settings.dog.DogColorSelectionView
+                    android:id="@+id/dog_edit_color_green"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:color_type="green" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dog_edit_color_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dog_edit_color_1"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <com.studio.jozu.bow.presentation.main.settings.dog.DogColorSelectionView
+                    android:id="@+id/dog_edit_color_yellow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:color_type="yellow" />
+
+                <com.studio.jozu.bow.presentation.main.settings.dog.DogColorSelectionView
+                    android:id="@+id/dog_edit_color_orange"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:color_type="orange" />
+
+                <com.studio.jozu.bow.presentation.main.settings.dog.DogColorSelectionView
+                    android:id="@+id/dog_edit_color_red"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:color_type="red" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dog_edit_ok_button"
+                style="@style/BowFlatButtonStyle.Base"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_selector_primary"
+                android:text="@android:string/ok"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:theme="@style/BowWhiteRippleButtonTheme" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dog_edit_cancel_button"
+                style="@style/BowFlatButtonStyle.Base"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_selector_secondary"
+                android:text="@android:string/cancel"
+                android:textColor="@color/black"
+                android:theme="@style/BowWhiteRippleButtonTheme" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

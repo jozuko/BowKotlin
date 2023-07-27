@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">BowKotlin</string>
+    <string name="mail_address">メールアドレス</string>
+    <string name="sign_in">サインイン</string>
+    <string name="jozu_mail_address">luke.da.wan+003@gmail.com</string>
+
+    <string name="common_error">エラー</string>
+    <string name="common_confirm">確認</string>
+    <string name="common_yes">はい</string>
+    <string name="common_no">いいえ</string>
+
+    <string name="week_sun">日</string>
+    <string name="week_mon">月</string>
+    <string name="week_tue">火</string>
+    <string name="week_wed">水</string>
+    <string name="week_thu">木</string>
+    <string name="week_fri">金</string>
+    <string name="week_sat">土</string>
+    <string name="month_label">%1$s月</string>
+    <string name="diff_days">%1$d日前</string>
+
+    <string name="error_message_terminate">予期せぬエラーが発生しました。アプリを終了します。</string>
+    <string name="error_validation_mail_address">メールアドレスの形式に誤りがあります。</string>
+    <string name="error_user_not_found">登録されているメールアドレスが見つかりませんでした。\n\n%1$s\nこのメールアドレスを新規登録してよろしいですか？</string>
+    <string name="confirm_logout_message">ログアウトします。よろしいですか？</string>
+
+    <string name="settings_dog">犬の管理</string>
+    <string name="settings_task">タスク管理</string>
+    <string name="settings_logout">ログアウト</string>
+    <string name="photo_from_gallery">ギャラリーから選ぶ</string>
+    <string name="photo_from_camera">カメラで撮影</string>
+    <string name="crop_photo">画像を切り抜き</string>
+
+    <string name="read_more">つづきをロード</string>
+</resources>

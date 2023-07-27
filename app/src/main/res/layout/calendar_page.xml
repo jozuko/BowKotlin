@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/title_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prev_button"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/calendar_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/calendar_text"
+                android:textSize="16dp"
+                tools:text="2020" />
+
+            <TextView
+                android:id="@+id/calendar_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/calendar_text"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                tools:text="10月" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/prev_button"
+            style="@style/BowFlatButtonStyle.Base"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_arrow_left"
+            android:drawableTint="@color/calendar_text"
+            android:theme="@style/BowBlackRippleButtonTheme" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_button"
+            style="@style/BowFlatButtonStyle.Base"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/title_base"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_arrow_right"
+            android:drawableTint="@color/calendar_text"
+            android:theme="@style/BowBlackRippleButtonTheme" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dog_list_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/title_base"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/next_button">
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/dog_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:flow_horizontalAlign="end"
+                app:flow_verticalAlign="top"
+                app:flow_wrapMode="chain"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/viewWeekHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewHeader"
+        android:background="@color/calendar_border"
+        android:orientation="horizontal"
+        android:paddingLeft="0.5dp"
+        android:paddingTop="0.5dp"
+        android:paddingRight="0.5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/calendar_cell_sunday"
+            android:gravity="center"
+            android:text="@string/week_sun"
+            android:textColor="@color/calendar_text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/calendar_cell_weekday"
+            android:gravity="center"
+            android:text="@string/week_mon"
+            android:textColor="@color/calendar_text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/calendar_cell_weekday"
+            android:gravity="center"
+            android:text="@string/week_tue"
+            android:textColor="@color/calendar_text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/calendar_cell_weekday"
+            android:gravity="center"
+            android:text="@string/week_wed"
+            android:textColor="@color/calendar_text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/calendar_cell_weekday"
+            android:gravity="center"
+            android:text="@string/week_thu"
+            android:textColor="@color/calendar_text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/calendar_cell_weekday"
+            android:gravity="center"
+            android:text="@string/week_fri"
+            android:textColor="@color/calendar_text"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/calendar_cell_saturday"
+            android:gravity="center"
+            android:text="@string/week_sat"
+            android:textColor="@color/calendar_text"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/day_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewWeekHeader"
+        android:background="@color/calendar_border"
+        android:padding="0.5dp"
+        app:columnCount="7" />
+
+    <RelativeLayout
+        android:id="@+id/event_list_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/day_grid"
+        android:layout_alignTop="@id/day_grid"
+        android:layout_alignRight="@id/day_grid"
+        android:layout_alignBottom="@id/day_grid"
+        android:layout_margin="60dp"
+        android:background="@mipmap/white_shadow"
+        android:clickable="true"
+        android:focusable="false"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/event_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/event_close_button"
+            android:gravity="center"
+            android:textColor="@color/calendar_text"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            tools:text="10/2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/event_close_button"
+            style="@style/BowFlatButtonStyle.Base"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_close"
+            android:drawableTint="@color/calendar_text"
+            android:theme="@style/BowBlackRippleButtonTheme" />
+
+        <ListView
+            android:id="@+id/event_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/event_day"
+            android:layout_marginTop="4dp"
+            android:divider="@null" />
+    </RelativeLayout>
+
+    <com.studio.jozu.bow.presentation.main.DogSelectionView
+        android:id="@+id/event_dog_selection_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

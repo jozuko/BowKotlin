@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7FAAAAAA"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="false"
+    android:padding="48dp">
+
+    <LinearLayout
+        android:id="@+id/task_edit_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/white_shadow"
+        android:orientation="vertical"
+        android:padding="@dimen/view_margin">
+
+        <EditText
+            android:id="@+id/task_edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="名前"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/task_edit_icon_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/task_edit_ok_button"
+                style="@style/BowFlatButtonStyle.Base"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_selector_primary"
+                android:text="@android:string/ok"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:theme="@style/BowWhiteRippleButtonTheme" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/task_edit_cancel_button"
+                style="@style/BowFlatButtonStyle.Base"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_selector_secondary"
+                android:text="@android:string/cancel"
+                android:textColor="@color/black"
+                android:theme="@style/BowWhiteRippleButtonTheme" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:paddingHorizontal="8dp">
+
+    <LinearLayout
+        android:id="@+id/dog_event_row_event_day_base"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/dog_event_row_event_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/calendar_text"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:text="11/30" />
+
+        <TextView
+            android:id="@+id/dog_event_row_event_past"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/calendar_text"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            tools:text="(10日前)" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dog_event_row_event_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:autoSizeMaxTextSize="16dp"
+        android:autoSizeMinTextSize="1dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_vertical"
+        android:lines="2"
+        android:textColor="@color/calendar_text"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/dog_event_row_event_day_base"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        tools:text="アーロン" />
+
+    <View
+        android:id="@+id/dog_event_row_dog_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:background="@color/dog_blue"
+        tools:text="アーロン" />
+
+    <ImageView
+        android:id="@+id/dog_event_row_event_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/dog_event_row_event_name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/ic_medicine_1" />
+
+    <TextView
+        android:id="@+id/dog_event_row_event_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="8dp"
+        android:autoSizeMaxTextSize="14dp"
+        android:autoSizeMinTextSize="1dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_vertical"
+        android:lines="2"
+        android:textColor="@color/calendar_text"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/dog_event_row_event_image"
+        app:layout_constraintRight_toLeftOf="@id/dog_event_row_event_time"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="薬" />
+
+    <TextView
+        android:id="@+id/dog_event_row_event_time"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/calendar_text"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10:02" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

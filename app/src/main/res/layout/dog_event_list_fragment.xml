@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dog_event_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.studio.jozu.bow.presentation.main.DogSelectionView
+        android:id="@+id/dog_event_list_dog_selection_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>
